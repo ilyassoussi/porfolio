@@ -78,7 +78,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-slate-900/98 backdrop-blur-sm border-b border-slate-800/50">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-slate-900/80 backdrop-blur-sm border-b border-slate-800/50">
             <div className="px-4 py-6 space-y-4">
               {navItems.map((item) => (
                 <button
