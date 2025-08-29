@@ -52,7 +52,7 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-16 animate-fade-in-up animation-delay-800">
-          <a href="mailto:ilyas.soussi@example.com" className="text-slate-400 hover:text-cyan-400 transition-colors duration-200 transform hover:scale-110">
+          <a href="mailto:ily.soussi@gmail.com" className="text-slate-400 hover:text-cyan-400 transition-colors duration-200 transform hover:scale-110">
             <Mail size={24} />
           </a>
           <a href="https://linkedin.com/in/ilyas-soussi" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors duration-200 transform hover:scale-110">
