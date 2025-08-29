@@ -4,44 +4,59 @@ import { Award, ExternalLink, Calendar, CheckCircle } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: 'Spring Boot Certification',
+      title: 'Building Scalable Java Microservices with Spring Boot and Spring Cloud',
       issuer: 'VMware',
       date: '2023',
       status: 'Validée',
       description: 'Certification officielle couvrant le développement d\'applications Java avec Spring Boot, la sécurité, les tests et le déploiement.',
       skills: ['Spring Boot', 'Java', 'REST APIs', 'Spring Security'],
       icon: '☕',
-      color: 'emerald'
+      color: 'emerald',
+      link: 'https://www.coursera.org/account/accomplishments/verify/MGJFG8F9RREJ'
     },
     {
-      title: 'Docker & Kubernetes',
+      title: 'Continuous Delivery & DevOps',
       issuer: 'Docker Inc.',
       date: '2023',
       status: 'Validée',
       description: 'Maîtrise des conteneurs Docker et orchestration Kubernetes pour les déploiements en production.',
       skills: ['Docker', 'Kubernetes', 'Container Orchestration', 'Microservices'],
       icon: '🐳',
-      color: 'blue'
+      color: 'blue',
+      link: 'https://coursera.org/share/b541bfe4e9b039fd3eb152570035648d'
     },
     {
-      title: 'AWS Solutions Architect',
+      title: 'Introduction to Containers w/ Docker, Kubernetes & OpenShift',
+      issuer: 'Docker Inc.',
+      date: '2023',
+      status: 'Validée',
+      description: 'Maîtrise des conteneurs Docker et orchestration Kubernetes pour les déploiements en production.',
+      skills: ['Docker', 'Kubernetes', 'Openshift', 'ArgoCD'],
+      icon: '🐳',
+      color: 'green',
+      link: 'https://coursera.org/share/359601b0e80a9c32b887b1da94a68139'
+    },
+    {
+      title: 'Git/GitLab',
       issuer: 'Amazon Web Services',
       date: '2022',
       status: 'Validée',
       description: 'Conception et déploiement d\'infrastructures scalables et sécurisées sur AWS.',
       skills: ['AWS', 'EC2', 'S3', 'RDS', 'CloudFormation'],
       icon: '☁️',
-      color: 'orange'
+      color: 'orange',
+      link: 'https://coursera.org/share/0a46b8fef514633d9c5d610d9b3b7365'
     },
     {
-      title: 'React Developer',
+      title: 'Java et POO',
       issuer: 'Meta',
       date: '2022',
       status: 'Validée',
       description: 'Développement d\'interfaces utilisateur modernes et performantes avec React et les hooks.',
       skills: ['React', 'JSX', 'Hooks', 'Component Architecture'],
       icon: '⚛️',
-      color: 'cyan'
+      color: 'cyan',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/WSF4VJ9JFX5F'
     },
     {
       title: 'Angular Developer',
@@ -51,17 +66,30 @@ const Certifications = () => {
       description: 'Framework Angular pour la création d\'applications web enterprise avec TypeScript.',
       skills: ['Angular', 'TypeScript', 'RxJS', 'Angular CLI'],
       icon: '🔺',
-      color: 'red'
+      color: 'red',
+      link: 'https://www.coursera.org/account/accomplishments/verify/GVE6QSSUJSC9'
     },
     {
-      title: 'CI/CD Pipeline Expert',
-      issuer: 'GitLab',
+      title: 'React',
+      issuer: 'Meta',
+      date: '2022',
+      status: 'Validée',
+      description: 'Framework Angular pour la création d\'applications web enterprise avec TypeScript.',
+      skills: ['React', 'TypeScript', 'JSX', 'Hooks'],
+      icon: '⚛️',
+      color: 'cyan',
+      link: 'https://www.coursera.org/account/accomplishments/verify/MJYNW6K2DEUP'
+    },
+    {
+      title: 'Continuous Integration and Continuous Delivery (CI/CD)',
+      issuer: 'CI/CD',
       date: '2021',
       status: 'Validée',
       description: 'Automatisation des processus de déploiement et intégration continue avec GitLab CI/CD.',
       skills: ['GitLab CI', 'Jenkins', 'Automation', 'DevOps'],
       icon: '🔄',
-      color: 'purple'
+      color: 'purple',
+      link: 'https://coursera.org/share/8b53b9339fff80432a227821e8f83004'
     }
   ];
 
@@ -155,10 +183,15 @@ const Certifications = () => {
 
               {/* Action Button */}
               <div className="mt-6 pt-4 border-t border-slate-700/30">
-                <button className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors duration-200 text-sm font-medium group-hover:gap-3">
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors duration-200 text-sm font-medium group-hover:gap-3"
+                >
                   <ExternalLink size={16} />
                   Voir la certification
-                </button>
+                </a>
               </div>
             </div>
           ))}

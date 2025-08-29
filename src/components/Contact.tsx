@@ -69,7 +69,7 @@ const Contact = () => {
     {
       name: 'LinkedIn',
       icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com/in/ilyas-soussi',
+      href: 'https://www.linkedin.com/in/ilyas-soussi-643739235/',
       color: 'hover:text-blue-400'
     },
     {
