@@ -4,6 +4,17 @@ import { Award, ExternalLink, Calendar, CheckCircle } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
+      title: 'Virtual networks in Azure',
+      issuer: 'Microsoft',
+      date: '2025',
+      status: 'Validée',
+      description: 'Gestion et configuration des réseaux virtuels sur la plateforme Azure.',
+      skills: ['Azure', 'Virtual Network', 'Cloud', 'Networking'],
+      icon: '☁️',
+      color: 'blue',
+      link: 'https://coursera.org/share/85ae5de43a68307994b39ffe67d4ccdc'
+    },
+    {
       title: 'Building Scalable Java Microservices with Spring Boot and Spring Cloud',
       issuer: 'VMware',
       date: '2023',
@@ -54,7 +65,7 @@ const Certifications = () => {
       status: 'Validée',
       description: 'Développement d\'interfaces utilisateur modernes et performantes avec React et les hooks.',
       skills: ['React', 'JSX', 'Hooks', 'Component Architecture'],
-      icon: '⚛️',
+      icon: '☕',
       color: 'cyan',
       link: 'https://www.coursera.org/account/accomplishments/certificate/WSF4VJ9JFX5F'
     },
